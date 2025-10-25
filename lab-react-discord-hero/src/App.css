@@ -1,0 +1,113 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+
+
+
+.App{
+  /*About the background image*/
+  background-image: url('./src/assets/68747470733a2f2f656475636174696f6e2d7465616d2d323032302e73332e65752d776573742d312e616d617a6f6e6177732e636f6d2f7765622d6465762f6c6162732f6c616e64696e672d706167652f646973636f72642d6261636b67726f756e642e706e67.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 450px; 
+
+  /*Transversal settings*/
+  background-color: #3F4FED;
+  padding: 10px 30px 100px;
+  font-family: 'Roboto', sans-serif;
+
+  /*NavBar settings*/
+  #navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #3F4FED;
+    #logo1 {
+        width: 20%;
+    }
+    #logo2 {
+        width: 5%;
+    }
+  }
+
+  /*Heading settings*/
+  .heading{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    h1 {
+      width: 40%;
+      font-family: 'Poppins', sans-serif;
+      margin: 0px 0px;
+      text-align: left;
+    }
+    p {
+      width: 55%;   
+      text-align: left;
+    }
+  }
+
+  /*Buttons settings*/
+  .bothButtons{
+    display: flex;
+    flex-direction: column;
+    button {
+      border-radius: 100px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+    #buttom1{
+      width: 180px;
+      background-color: white;
+      color: black;
+    }
+    #buttom2{
+      width: 260px;
+    }
+  }
+}
